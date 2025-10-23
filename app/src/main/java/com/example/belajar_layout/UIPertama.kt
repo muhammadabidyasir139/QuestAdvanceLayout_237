@@ -26,9 +26,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ActivitasPertama(modifier: Modifier = Modifier) { // Mengganti 'modeifier' menjadi 'modifier' dan memberikan nilai default
+fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(
-        modifier = modifier // Menggunakan parameter modifier
+        modifier = modifier
             .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
