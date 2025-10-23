@@ -44,9 +44,9 @@ fun ActivitasPertama(modeifier: Modifier) {
                             color = Color.white,
                             modifier = Modifier.padding(top=15.dp)
                         )
-                        Text(
+                                Text(
 
-                        )
+                                )
                     )
                 }
             }
