@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.belajar_layout"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.belajar_layout"
