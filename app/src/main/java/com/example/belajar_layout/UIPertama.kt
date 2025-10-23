@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 fun ActivitasPertama(modeifier: Modifier) {
     Column(modifier: Modifier.padding(top=100.dp)
         .fillMaxSize(),
-        horizonalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(text = stringResource(id = R.string.prodi),
             fontSize = 35.sp,
