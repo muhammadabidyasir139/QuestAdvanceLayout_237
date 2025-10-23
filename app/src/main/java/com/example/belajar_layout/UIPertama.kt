@@ -2,6 +2,7 @@ package com.example.belajar_layout
 
 import android.widget.Space
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -38,18 +39,18 @@ fun ActivitasPertama(modeifier: Modifier) {
                 Spacer(modifier = Modifier.width(width = 30dp))
                 Column(){
                     Text(
-                        text = stringResource((id = R.string.nama),
+                        text = stringResource(id = R.string.nama),
                             fontSize = 30.sp,
                             fontFamily = FontFamily.Cursive,
                             color = Color.white,
                             modifier = Modifier.padding(top=15.dp)
-                        )
-                                Text(
-
-                                )
                     )
                 }
             }
         }
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        )
     }
 }
