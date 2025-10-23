@@ -1,6 +1,7 @@
 package com.example.belajar_layout
 
 import android.widget.Space
+import androidx.compose.foundation.layout.FlowRowScopeInstance.align
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -55,6 +56,8 @@ fun ActivitasPertama(modeifier: Modifier) {
             Text(
                 text = stringResource(id = R.string.copy),
                 modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 10.dp)
             )
         }
     }
