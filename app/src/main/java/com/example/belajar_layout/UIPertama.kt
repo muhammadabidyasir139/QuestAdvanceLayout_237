@@ -13,7 +13,7 @@ import androidx.compose.ui.res.stringResource
 
 
 @Composable
-fun ActivitasPertama(modeifier: Modifier) {
+fun ActivitasPertama(modifier: Modifier = Modifier) {
     Column(modifier: Modifier.padding(top=100.dp)
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
