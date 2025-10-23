@@ -24,6 +24,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.style.TextAlign
 
 @Composable
 fun ActivitasPertama(modifier: Modifier = Modifier) {
@@ -40,7 +41,8 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
         )
         Text(
             text = stringResource(id = R.string.univ),
-            fontSize = 22.sp
+            fontSize = 22.sp,
+            textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card(
@@ -64,10 +66,105 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
                 Column {
                     Text(
                         text = stringResource(id = R.string.nama),
-                        fontSize = 35.sp,
+                        fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue
+            )
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                val gambar = painterResource(id = R.drawable.recycle)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 10.dp)
+                )
+                Spacer(modifier = Modifier.width(25.dp))
+                Column {
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.phone),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green
+            )
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                val gambar = painterResource(id = R.drawable.recycle)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 10.dp)
+                )
+                Spacer(modifier = Modifier.width(25.dp))
+                Column {
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(id = R.string.phone),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
